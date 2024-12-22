@@ -1,0 +1,23 @@
+tr -d ' ' < hsa_sequence.fasta | sed '/^$/d' > hsa_sequence_new.fasta
+This command will remove all the spaces between each line
+
+
+tr -d ' ' < hsa_sequence.fasta | awk 'BEGIN { RS = ">" } NR > 1 { split($1, id, /MI/) ; print id[1] "," "MI" id[2] "," $2 }' > hsa_miR_sequence.csv
+
+this command will convert the fasta file into csv file.
+
+awk 'BEGIN { OFS="," } /^>/ {if (NR > 1) print name, id, seq; name=$1; id=$2; seq=""} !/^>/ {seq=seq $0} END {print name, id, seq}' mmu_sequence.fasta> mmu_miR_sequence.csv 
+
+
+
+awk 'BEGIN {FS=" "} /^>/ {if (seq) print id, mi, desc, seq; seq=""; id=$1; mi=$2; desc=$3","$4","$5} !/^>/ {seq=seq$0} END {print id, mi, desc, seq}' mature.fa | tr -d '>' | tr ' ' ',' > mature_miR.csv 
+
+grep -c '^>' Human_exonic_premiR_sequence.fasta 
+
+this will count the number of > in a fasta file
+
+
+
+this will convert csv file into fasta file
+awk -F, 'NR > 1 {print ">" $4 "\n" $7}' input.csv > output.fasta
+
