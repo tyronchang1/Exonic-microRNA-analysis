@@ -17,7 +17,7 @@ bedtools intersect -a hsa.bed -b human_all_genes_no_miR_df_NCBI.bed -v >human_no
 
 #this command will find the ones opposite to the host mRNAs but still exonic miRNAs
 bedtools intersect -a human_all_genes_no_miR_df_NCBI.bed -b hsa.bed -S -wa -wb >human_exonic_miR_opposite_NCBI.bed 
-#### This command will get exonic miRNAs on the same strand as host genes but could only be partially overlapped with the exons.
+#### This command will get exonic miRNAs on the same strand as host genes. However,miRNAs partially overlapped with the exons will be included.
 bedtools intersect -a human_all_genes_no_miR_df_NCBI.bed -b hsa.bed -s -wa -wb >human_exonic_miR_intragenic_NCBI.bed 
 
 
