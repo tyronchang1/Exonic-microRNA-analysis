@@ -10,7 +10,7 @@ The programming languages and tools used for this study are are shown below:
 
 
 ### The pipeline is shown below:
-![Model](./pipeline.png)
+![Model](./exonic_miR_pipeline.png)
 
 ### Source of the data:
 
