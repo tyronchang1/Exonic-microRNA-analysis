@@ -14,40 +14,27 @@ The programming languages and tools used for this study are are shown below:
 
 ### Source of the data:
 
-miR loci data are retrieved from [miRbase](https://www.mirbase.org/download/)
+miR loci data are retrieved from [miRBase](https://www.mirbase.org/download/)
 
 The original NCBI RefSeq data are retrieved from [UCSC genome table browser](https://genome.ucsc.edu/cgi-bin/hgTables)
 
+Please see the instruction below to see how to download the data.
+
+**Original master table**
+
+![UCSC](./UCSC.png)
+
+**miRBase data**
+![miRBase](./miRBase.png)
 
 
-
-
-
-
-There is a lot of files so if you just want to see the final output please just go to the excel file folder. Here are the files you will be interested:
-
-### **all microRNAs:**
-
-![Human](https://img.shields.io/badge/Human-red)
-
-* **`Human_miR_type_finalized_df_unique.xlsx`** will tell you if these miRNAs are exonic, intronic, no host genes, etc.
-
-### **exonic microRNA:**
+There is a lot of files so if you just want to see the final output please just go to the excel file folder named MS_tables. 
 
 ![Human](https://img.shields.io/badge/Human-red)
 
-* **`human_exonic_miR(gene_type)_NCBI_unique.xlsx`** has more information it will tell you:
-    1. if they are protein-coding or non-coding genes.
-    2. numbers of exons for each host genes.
-    3. The length of mRNAs for each host genes.
-    4. Their genetic coordinates.
 
-* **`human_exonic_miR_list(protein_coding_host_genes)_NCBI_unique.xlsx`** is a clean version of exonic miRNAs resding in protein-coding genes. The file does not have genetic coordinates and it will tell you:
 
-    1. if exonic miRNAs lives in 5'UTR, 3'UTR, or CDS.
-    2. The length of mature host mRNAs.
 
-* **`human_exonic_miR_list(all_host_genes)_NCBI_no_loc.xlsx`** is a clean version of exonic miRNAs file without coordinates and it will tell you if they are protein-coding or non-coding genes. This file has all the isoforms.
 
 ![Mouse](https://img.shields.io/badge/Mouse-blue)
 
