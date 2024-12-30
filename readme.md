@@ -54,16 +54,24 @@ Mapping of the coordinates of miRNAs was done with Bedtools with additional shel
 
 * **`Gene_func.ipynb`**-> this file will assign new column to the dataframe to indicate if the host gene is a protein coding or non-coding gene.
 
-* **`Mouse_miR_analysis.ipynb`**-> this file is miR analysis in mouse.
+* **`EXONIC.ipynb`**-> this file contains modules that allow you to assign regions for exonic miRNA locations (e.g. 3'UTR, 5'UTR, CDS).
 
 
 **Shell scripts**:
 
 *Human*
+"execute these scripts in order please!"
 1. map all exonic miRs=> **`bedtools_human_exonic_miR.sh`**
-2. map all intronic miRs=> **`bedtools_human_intronic_miR.sh`**
-3. map all intronic and no host gene miRs=> **`bedtools_human_nonexonic_miR.sh`**
+2. map all intronic and no host gene miRs=> **`bedtools_human_nonexonic_miR.sh`**
+3. map all intronic miRs=> **`bedtools_human_intronic_miR.sh`**
 4. move all csv files into a new csv folder=> **`human_csv.sh`**
+
+*Mouse*
+"execute these scripts in order please!"
+1. map all exonic miRs=> **`bedtools_mouse_exonic_miR.sh`**
+2. map all intronic and no host gene miRs=> **`bedtools_mouse_nonexonic_miR.sh`**
+3. map all intronic miRs=> **`bedtools_mouse_intronic_miR.sh`**
+4. move all csv files into a new csv folder=> **`mouse_csv.sh`**
 
 
 
