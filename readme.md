@@ -59,15 +59,15 @@ Mapping of the coordinates of miRNAs was done with Bedtools with additional shel
 
 **Shell scripts**:
 
-*Human*
-"execute these scripts in order please!"
+![Human](https://img.shields.io/badge/Human-red)
+Execute these scripts in order please!
 1. map all exonic miRs=> **`bedtools_human_exonic_miR.sh`**
 2. map all intronic and no host gene miRs=> **`bedtools_human_nonexonic_miR.sh`**
 3. map all intronic miRs=> **`bedtools_human_intronic_miR.sh`**
 4. move all csv files into a new csv folder=> **`human_csv.sh`**
 
-*Mouse*
-"execute these scripts in order please!"
+![Mouse](https://img.shields.io/badge/Mouse-blue)
+Execute these scripts in order please!
 1. map all exonic miRs=> **`bedtools_mouse_exonic_miR.sh`**
 2. map all intronic and no host gene miRs=> **`bedtools_mouse_nonexonic_miR.sh`**
 3. map all intronic miRs=> **`bedtools_mouse_intronic_miR.sh`**
